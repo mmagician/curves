@@ -52,6 +52,8 @@ impl BW6Config for Config {
     type Fp6Config = Fq6Config;
     type G1Config = g1::Config;
     type G2Config = g2::Config;
+    const H_T: i64 = 13;
+    const H_Y: i64 = 9;
 }
 
 pub type BW6_761 = BW6<Config>;
